@@ -30,6 +30,22 @@
 		00E356EE1AD99517003FC87E /* reduxExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reduxExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* reduxExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reduxExampleTests.m; sourceTree = "<group>"; };
+		0196CC7F28BB4A57007A3543 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fontisto.ttf; sourceTree = "<group>"; };
+		0196CC8028BB4A57007A3543 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octicons.ttf; sourceTree = "<group>"; };
+		0196CC8128BB4A57007A3543 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Feather.ttf; sourceTree = "<group>"; };
+		0196CC8228BB4A57007A3543 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Entypo.ttf; sourceTree = "<group>"; };
+		0196CC8328BB4A57007A3543 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Brands.ttf; sourceTree = "<group>"; };
+		0196CC8428BB4A57007A3543 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialCommunityIcons.ttf; sourceTree = "<group>"; };
+		0196CC8528BB4A57007A3543 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AntDesign.ttf; sourceTree = "<group>"; };
+		0196CC8628BB4A57007A3543 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Foundation.ttf; sourceTree = "<group>"; };
+		0196CC8728BB4A57007A3543 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ionicons.ttf; sourceTree = "<group>"; };
+		0196CC8828BB4A57007A3543 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Solid.ttf; sourceTree = "<group>"; };
+		0196CC8928BB4A57007A3543 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome5_Regular.ttf; sourceTree = "<group>"; };
+		0196CC8A28BB4A57007A3543 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		0196CC8B28BB4A57007A3543 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Zocial.ttf; sourceTree = "<group>"; };
+		0196CC8C28BB4A57007A3543 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = EvilIcons.ttf; sourceTree = "<group>"; };
+		0196CC8D28BB4A57007A3543 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimpleLineIcons.ttf; sourceTree = "<group>"; };
+		0196CC8E28BB4A57007A3543 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = MaterialIcons.ttf; sourceTree = "<group>"; };
 		08B32BEC00BB00945FB08707 /* libPods-reduxExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reduxExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B98FCE1C83F3E86B9F2C58E /* Pods-reduxExample-reduxExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reduxExample-reduxExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-reduxExample-reduxExampleTests/Pods-reduxExample-reduxExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* reduxExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reduxExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +99,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0196CC7E28BB4A57007A3543 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0196CC7F28BB4A57007A3543 /* Fontisto.ttf */,
+				0196CC8028BB4A57007A3543 /* Octicons.ttf */,
+				0196CC8128BB4A57007A3543 /* Feather.ttf */,
+				0196CC8228BB4A57007A3543 /* Entypo.ttf */,
+				0196CC8328BB4A57007A3543 /* FontAwesome5_Brands.ttf */,
+				0196CC8428BB4A57007A3543 /* MaterialCommunityIcons.ttf */,
+				0196CC8528BB4A57007A3543 /* AntDesign.ttf */,
+				0196CC8628BB4A57007A3543 /* Foundation.ttf */,
+				0196CC8728BB4A57007A3543 /* Ionicons.ttf */,
+				0196CC8828BB4A57007A3543 /* FontAwesome5_Solid.ttf */,
+				0196CC8928BB4A57007A3543 /* FontAwesome5_Regular.ttf */,
+				0196CC8A28BB4A57007A3543 /* FontAwesome.ttf */,
+				0196CC8B28BB4A57007A3543 /* Zocial.ttf */,
+				0196CC8C28BB4A57007A3543 /* EvilIcons.ttf */,
+				0196CC8D28BB4A57007A3543 /* SimpleLineIcons.ttf */,
+				0196CC8E28BB4A57007A3543 /* MaterialIcons.ttf */,
+			);
+			name = Fonts;
+			path = "../node_modules/react-native-vector-icons/Fonts";
+			sourceTree = "<group>";
+		};
 		05291A53400D37B4185ACD62 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +131,6 @@
 				0B98FCE1C83F3E86B9F2C58E /* Pods-reduxExample-reduxExampleTests.debug.xcconfig */,
 				7AAC740FF8DFC0EA63DAEA31 /* Pods-reduxExample-reduxExampleTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,6 +167,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				0196CC7E28BB4A57007A3543 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* reduxExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* reduxExampleTests */,
