@@ -6,9 +6,9 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Movies from '../screens/Movies';
 import Favorites from '../screens/Favorites';
 const Tab = createBottomTabNavigator();
-const tabBarOptions = {
-  showLabel: true,
-  activeTintColor: '#9381ff',
+const screenOptions = {
+  tabBarShowLabel: true,
+  tabBarActiveTintColor: '#9381ff',
   style: {
     height: '10%',
   },
@@ -16,7 +16,7 @@ const tabBarOptions = {
 const RootNavigator = () => {
   return (
     <NavigationContainer>
-      <Tab.Navigator tabBarOptions={tabBarOptions}>
+      <Tab.Navigator screenOptions={screenOptions}>
         <Tab.Screen
           name="Movies"
           component={Movies}
