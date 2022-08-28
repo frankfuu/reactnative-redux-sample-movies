@@ -7,7 +7,7 @@ import Movies from '../screens/Movies';
 import Favorites from '../screens/Favorites';
 const Tab = createBottomTabNavigator();
 const tabBarOptions = {
-  showLabel: false,
+  showLabel: true,
   activeTintColor: '#9381ff',
   style: {
     height: '10%',
