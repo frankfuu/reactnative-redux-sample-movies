@@ -12,7 +12,6 @@ export default function BooksList() {
   const fetchMovies = () => dispatch(getMovies());
   useEffect(() => {
     fetchMovies();
-    console.log(`hehehrreh`)
   }, []);
 
   //  after fetch movies dispatch function, add:

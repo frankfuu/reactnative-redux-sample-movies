@@ -16,7 +16,6 @@ export const getMovies = () => {
     return async dispatch => {
       const res = await axios.get(`${STATIC_URL}`);
       if (res.data) {
-        console.log(res.data)
         dispatch({
           type: GET_MOVIES,
           payload: res.data.results,
