@@ -3,17 +3,34 @@ import React, {useEffect} from 'react';
 import {View, Text, FlatList, Image, TouchableOpacity, StyleSheet} from 'react-native';
 import {useSelector, useDispatch} from 'react-redux';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import {getMovies} from '../redux/actions';
+import {getMovies, addFavorite, removeFavorite} from '../redux/actions';
 
 
 export default function BooksList() {
-  const {movies} = useSelector(state => state.moviesReducer);
+  const {movies, favorites} = useSelector(state => state.moviesReducer);
   const dispatch = useDispatch();
   const fetchMovies = () => dispatch(getMovies());
   useEffect(() => {
     fetchMovies();
     console.log(`hehehrreh`)
   }, []);
+
+  //  after fetch movies dispatch function, add:
+  const addToFavorites = movie => dispatch(addFavorite(movie));
+  const removeFromFavorites = movie => dispatch(removeFavorite(movie));
+  const handleAddFavorite = movie => {
+    addToFavorites(movie);
+  };
+  const handleRemoveFavorite = movie => {
+    removeFromFavorites(movie);
+  };
+
+  const exists = movie => {
+    if (favorites.filter(item => item.id === movie.id).length > 0) {
+      return true;
+    }
+    return false;
+  };
   
 
   return (
@@ -21,7 +38,7 @@ export default function BooksList() {
       <Text style={{fontSize: 22}}>Popular Movies</Text>
       <View style={{flex: 1, marginTop: 12}}>
         <FlatList
-          data={movies.results}
+          data={movies}
           keyExtractor={item => item.id.toString()}
           renderItem={({item}) => {
             const IMAGE_URL =
@@ -58,7 +75,8 @@ export default function BooksList() {
                         {item.vote_count}
                       </Text>
                       <TouchableOpacity
-                        onPress={() => console.log('Added!')}
+                        onPress={() =>     exists(item) ? handleRemoveFavorite(item) : handleAddFavorite(item)
+                        }
                         activeOpacity={0.7}
                         style={{
                           marginLeft: 14,
@@ -73,7 +91,7 @@ export default function BooksList() {
                         <MaterialIcons
                           color="orange"
                           size={32}
-                          name="favorite-outline"
+                          name={exists(item) ? 'favorite' : 'favorite-outline'}
                         />
                       </TouchableOpacity>
                     </View>
